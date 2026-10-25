@@ -13,15 +13,40 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- validate name -->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" minlength="2" required>
+
+        <!-- valid email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>  
+
+        <!-- tshirt color (3 options;require 1; validate) -->        
+            <fieldset>
+              <legend>What is your preferred t-shirt color? </legend>
+              <label><input type="radio" name="color" value="black" required> Black</label>
+              <label><input type="radio" name="color" value="purple"> Purple</label>
+              <label><input type="radio" name="color" value="green"> Green</label>
+            </fieldset>
+
+        <!-- tshirt size (6 options; require 1; validate)-->
+            <fieldset>
+              <legend>What is your preferred t-shirt size? </legend>
+              <label><input type="radio" name="size" value="xs" required> XS</label>
+              <label><input type="radio" name="size" value="s"> S</label>
+              <label><input type="radio" name="size" value="m"> M</label>
+              <label><input type="radio" name="size" value="l"> L</label>
+              <label><input type="radio" name="size" value="xl"> XL</label>
+              <label><input type="radio" name="size" value="xxl"> XXL</label>
+            </fieldset>
+
+        <!-- submit button-->        
+            <button type="submit">Submit</button>        
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p>© 2026. Created by Ria as part of Migracode BCN onboarding module.</p>
     </footer>
   </body>
 </html>
